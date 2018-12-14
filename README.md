@@ -41,3 +41,30 @@ mysql> select count(command), date(created)  from bash.history group by command,
 |             33 | 2018-11-25    |
 
 ```
+Some example aliases
+
+```
+@his(){
+	limit=""
+	command="select oid, created, command, cwd, tag from bash.history where command like '%$1%' "
+	if [[ -z "$2" ]]
+	then
+		1=1
+	else
+		limit="order by created desc limit $2"
+	fi;
+	
+	mysql -e "$command$limit"
+	echo "run @ NUMBER to repeat command"
+}
+
+function hitag(){
+	export HISTORY_TAG=$1
+}
+
+function hiuntag(){
+	export HISTORY_TAG=''
+}
+
+# alias historyMysqlDel="mysql -e "use bash; truncate history""
+```
