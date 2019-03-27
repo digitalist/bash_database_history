@@ -1,11 +1,11 @@
 # bash_database_history
-save your bash history to mysql or sqlite
+save your bash/zsh history to mysql or sqlite
 
-see bashrc_trap.sh
+see `bashrc_trap.sh` or `zsh_trap.sh`
 
 1) create databases you like (see `bashrc_trap.sh` for templates)
 2) comment/uncomment what you need to use (mysql/sqlite3)
-3) put bashrc_trap.sh to the bottom of your .bashrc
+3) source `bashrc_trap.sh` or `zsh_trap.sh` at the bottom of your `~/.bashrc` / `~/.zshrc`
 4) enjoy your upgraded history using some aliases
 
 ```
