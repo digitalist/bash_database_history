@@ -1,4 +1,4 @@
-# bash_database_history
+# shell_database_history
 save your bash/zsh history to mysql or sqlite
 
 see `bashrc_trap.sh` or `zsh_trap.sh`
