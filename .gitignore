@@ -1,0 +1,28 @@
+# editors
+.idea
+*.swp
+# default gcc output file
+a.out
+# cache and logs
+*.pyc
+*.csv
+*.log
+# specific
+*.7z
+
+#clion cmake builds
+cmake-build-debug
+cmake-build-default
+cmake-build-minsizerel
+cmake-build-release
+cmake-build-relwithdebinfo
+
+# popular for manual cmake builds
+build
+nohup.out
+
+#python pickle
+*.pickle
+
+#node
+node_modules
