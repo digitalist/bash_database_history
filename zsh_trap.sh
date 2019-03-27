@@ -46,7 +46,7 @@ preexec () {
     else
         echo TAG: $HISTORY_TAG
     fi;
-		echo "cl ${COMP_LINE}"
+	
     [ -n "$COMP_LINE" ] && return  # do nothing if completing
     #[ "$BASH_COMMAND" = "$PROMPT_COMMAND" ] && return # don't cause a preexec for $PROMPT_COMMAND
 
